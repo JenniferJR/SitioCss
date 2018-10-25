@@ -1,4 +1,43 @@
-#titulo1
+@import "compass/css3";
+
+
+
+.static-img {
+  display: block; 
+}
+
+iframe {
+   max-width: 100%; 
+}
+.map-container {
+  width: 100%;
+  margin: auto;
+  height: 0;
+  padding-top: 38%;
+  position: relative;
+  display: none; /* Hide for small screens */
+  iframe {
+    width: 100%;
+    height: 100%; /* had to specify height/width */
+    position: absolute;
+    top: 0; 
+    right: 0;
+    left: 0; 
+    bottom: 0;   
+  }
+}
+
+/* Medium Screens */
+@media all and (min-width: 34.375em) {
+  .map-container {
+    display: block;
+  } 
+  .static-img {
+    display: none; 
+  }
+}
+
+titulo1
 {
   color: #F47920;
 }
@@ -6,4 +45,23 @@
 #colorAzul
 {
 background-color:#005883;
+}
+
+#letraObjetivos
+{
+font-family: Angsana New;
+font-size: x-large;
+}
+
+#scrollup {
+    z-index: 1000;
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 55px;
+    right: 25px;
+    display: none;
+    text-indent: -9999px;
+    background: url('../IMG/icon_top.png') no-repeat;
 }

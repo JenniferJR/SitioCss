@@ -11,18 +11,92 @@
       </script>           
       <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">      
       </script>             
-      <script ></script>
+      <link rel="stylesheet" type="text/css" href="Css/style.css" /> 
    </head>
-   <body style="background-color: #005883"> 
-      
-      <ul id="tabs-swipe-demo" class="tabs">
-    <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
-    <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
-    <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
+
+   <body> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+
+<div class="row container">
+  <img class="mySlides" src="IMG/banner1.jpg" style="width:100%">    
+  <img class="mySlides" src="IMG/banner3.jpg" style="width:100%">
+  <img class="mySlides" src="IMG/banner4.jpg" style="width:100%">
+  
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+
+
+    <div class="row container">  
+    <h1 style="color:#005883; " class="header center" ><b>Principios de la Teoria General de Sistemas</b></h1>
+
+    <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i><b>Totalidad</b></div>
+      <div class="collapsible-body"><span>El sistema trasciende las características individuales de sus miembros</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i><b>Entropia</b></div>
+      <div class="collapsible-body"><span>Los sistemas tienden a conservar su identidad</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i><b>Sinergia</b></div>
+      <div class="collapsible-body"><span>Todo cambio en alguna de las partes afecta a todas las demás y en ocasiones al sistema</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i><b>Finalidad</b></div>
+      <div class="collapsible-body"><span>Los sistemas comparten metas comunes</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i><b>Equifinalidad</b></div>
+      <div class="collapsible-body"><span>Las modificaciones del sistema son independientes de las condiciones iniciales</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i><b>Equipotencialidad</b></div>
+      <div class="collapsible-body"><span>Permite a las partes restantes asumir las funciones de las partes extinguidas</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i><b>Retroalimentación</b></div>
+      <div class="collapsible-body"><span>Los sistemas mantienen un constante intercambio de información</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i><b>Homeostasis</b></div>
+      <div class="collapsible-body"><span>Todo sistema viviente se puede definir por su tendencia a mantenerse estable</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i><b>Morfogénesis</b></div>
+      <div class="collapsible-body"><span>Todo sistema también se define por su tendencia al cambio</span></div>
+    </li>
   </ul>
-  <div id="test-swipe-1" class="col s12 blue">Test 1</div>
-  <div id="test-swipe-2" class="col s12 red">Test 2</div>
-  <div id="test-swipe-3" class="col s12 green">Test 3</div>
+    </div>     
+      
   
    </body>
 </html>
