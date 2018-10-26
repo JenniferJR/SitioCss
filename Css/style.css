@@ -65,3 +65,42 @@ font-size: x-large;
     text-indent: -9999px;
     background: url('../IMG/icon_top.png') no-repeat;
 }
+
+nav {
+  background-color: #005883!important;
+}
+
+nav li a:hover{
+  color: #F0B429!important;
+}
+
+footer {
+  background-color: #005883!important;   
+}
+
+.facebook {
+  background-color: #337AB7;
+}
+
+.facebook:hover {
+  background-color: #337AB7;
+}
+
+.instagram {
+  background-color: #EAA867;
+}
+
+.instagram:hover {
+  background-color: #EAA867;
+}
+
+.link {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.twitter {
+  width: 300px!important;
+  height: 300px;
+  overflow: auto;
+}
