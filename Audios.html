@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<title>UNAD | Diseño de sitios web</title>
+	  	<meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+	  	<link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+	  	<link rel="stylesheet" type="text/css" href="Css/materialize.css" />
+	    
+	  	<link rel="stylesheet" type="text/css" href="Css/style.css" /> 
+	</head>
+	<body>
+	  	<!-- Dropdown Structure -->
+	  	<ul id="dropdown1" class="dropdown-content">
+	    	<li><a href="Videos.html">Videos</a></li>
+	    	<li><a href="Audios.html">Audios</a></li>
+	  	</ul>
+	  	<nav>
+		    <div class="nav-wrapper">
+	    	  	<ul class="right hide-on-med-and-down">
+	        		<li><a href="Index.html">Inicio</a></li>
+	        		<li><a href="Lecturas.html">Lecturas</a></li>
+	        		<!-- Dropdown Trigger -->
+	        		<li><a class="dropdown-trigger" href="Multimedia.html" data-target="dropdown1">Multimedia<i class="material-icons right">arrow_drop_down</i></a></li>
+	        		<li><a class="dropdown-trigger" href="Actividades.html" data-target="dropdown1">Actividades<i class="material-icons right">arrow_drop_down</i></a></li>
+	        		<li><a href="Autores.html">Autores</a></li>
+	      		</ul>
+	    	</div>
+	  	</nav>
+
+	  	<div class="row">
+	    	<div class="col s8">
+	      		<div class="video-container">
+	      			<iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+	    		</div>
+	    	</div>
+	  	</div>
+	</body>
+</html>
+<script type='text/javascript' src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<!-- <script type="text/javascript" src="js/script.js"></script> -->     
+<script>
+  	$(document).ready(function(){
+    	$(".dropdown-trigger").dropdown();
+  	});
+</script>

@@ -66,6 +66,7 @@ font-size: x-large;
     background: url('../IMG/icon_top.png') no-repeat;
 }
 
+<<<<<<< HEAD
 #terminos
 {
 font-family: Angsana New;
@@ -191,4 +192,43 @@ font-family: Angsana New;
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+=======
+nav {
+  background-color: #005883!important;
+}
+
+nav li a:hover{
+  color: #F0B429!important;
+}
+
+footer {
+  background-color: #005883!important;   
+}
+
+.facebook {
+  background-color: #337AB7;
+}
+
+.facebook:hover {
+  background-color: #337AB7;
+}
+
+.instagram {
+  background-color: #EAA867;
+}
+
+.instagram:hover {
+  background-color: #EAA867;
+}
+
+.link {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.twitter {
+  width: 300px!important;
+  height: 300px;
+  overflow: auto;
+>>>>>>> 9759e7a012066562575274769bab6837dd32b06e
 }
