@@ -9,9 +9,12 @@
       <script type='text/javascript' src="Js/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="Js/materialize.min.js"></script>          
       <link rel="stylesheet" type="text/css" href="Css/style.css" /> 
-      <script>
-	  
-	  </script>
+      <script type="text/javascript">
+        $(document).ready(function () {
+            $('.parallax').parallax();
+            $('.slider').slider();
+        });
+    </script>
    </head>
    
    <body style="background-color:#B3B3B3B3">    
@@ -29,7 +32,7 @@
       <ul  class="left center hide-on-med-and-down">
         <li><a href="#test1"><b>INICIO</b></a></li>
         <li><a href="Lecturas.html"><b>LECTURAS</b></a></li>
-        <li><a href="Lecturas.html"><b>MULTIMEDIA</b></a></li>
+        <li><a href="Multimedia.html"><b>MULTIMEDIA</b></a></li>
         <li><a href="Lecturas.html"><b>ACTIVIDADES</b></a></li>
         <li><a href="Lecturas.html"><b>AUTORES</b></a></li>
       </ul>
@@ -56,7 +59,51 @@
 	
   </div>
 
-     <div class="section white">
+  <div class="parallax-container valign-wrapper">
+		<div class="section no-pad-bot">
+			<div  class="container">
+				<div class="parallax">
+					<div  class="slider">
+						<ul  class="slides">
+							<li style="background-color: transparent;">
+								<img class="activator" src="images/parallax1.jpg" />
+								<div class="caption center-align">
+									<h4>OBJETIVO GENERAL</h4>
+									<h5 class="light grey-text text-lighten-3">Aplicar las diferentes metodologías de diseño web</h5>
+								</div>
+							</li>
+							<li style="background-color: transparent;">
+								<img src="images/parallax1.jpg">
+								<div id="letraObjetivos"  class="caption left-align">
+									<h4>OBJETIVOS ESPECÍFICOS:</h4>
+									<h5 class="light grey-text text-lighten-3">
+                    - Diseñar mockup de la página web del tema seleccionado
+                  </h5>
+									<h5 class="light grey-text text-lighten-3">
+                    - Aprender el uso de las herramientas de diseño de mockups</h5>
+									<h5 class="light grey-text text-lighten-3">
+                    - Afianzar conocimientos y técnicas previas al desarrollo de la página web</h5>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<img src="IMG/parallax1.jpg"  style="opacity: 1; transform: translate3d(-50%, 258.452px, 0px);">
+				</div>
+			</div>
+		</div>	
+		<div class="row center">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>		
+			
+		</div>
+	</div>
+  
+<!--      <div class="section white">
       <h3 style="font-family: Angsana New" class="header center"><b>OBJETIVO GENERAL</b></h3>
         <div class="col s12 m8 offset-m2">
                  <h5 class="center light">Aplicar las diferentes metodologías de diseño web</h5>            
@@ -72,7 +119,7 @@
           <br>
      </div>
        
-    </div>
+    </div> -->
 
     <div style="background-color: #808080" class="section">    
     <div  class="row center container">
@@ -102,7 +149,7 @@
   </div>
 </div>  
                    
-    <footer style="background-color:black;" class="page-footer">
+     <footer style="background-color:black;" class="page-footer">
         <div class="container">
             <div class="row">
                 <div class="col l6 s14">
@@ -115,11 +162,12 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer">
             <div class="container">
-                <p id="copyring">©2018 Todos los derechos reservados.</p>
+                <p id="terminos">©2018 Todos los derechos reservados.</p>
             </div>
-        </div>
+        </div>        
+            <br>
     </footer>
 
    </body>
