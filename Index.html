@@ -7,7 +7,7 @@
          href = "https://fonts.googleapis.com/icon?family=Material+Icons">
       <link rel="stylesheet" type="text/css" href="Css/materialize.css" />
       <script type='text/javascript' src="Js/jquery-2.1.1.min.js"></script>
-<<<<<<< HEAD
+
       <script type="text/javascript" src="Js/materialize.min.js"></script>          
       <link rel="stylesheet" type="text/css" href="Css/style.css" /> 
       <script type="text/javascript">
@@ -16,36 +16,53 @@
             $('.slider').slider();
         });
     </script>
-=======
+
       <script type="text/javascript" src="Js/materialize.min.js"></script>
       <link rel="stylesheet" type="text/css" href="Css/style.css" />
     <script>
 	  
 	  </script>
->>>>>>> 9759e7a012066562575274769bab6837dd32b06e
+
+
    </head>
    
    <body style="background-color:#B3B3B3B3">    
 
     <a id="scrollup">Scroll</a>
 
-     <div id="index-banner"  height="10%">  
-            <div class="section no-pad-bot">
-              <img src="IMG/ECBTI-1.png" width="100%">
+     <header>
+<div id="index-banner"  height="30%">  
+            <img src="IMG/ECBTI-1.png" width="100%">
             </div>
-            </div>
+        </header>
 	     
-  <nav style="background-color:#808080">
-    <div class="nav-wrapper">      
-      <ul  class="left center hide-on-med-and-down">
-        <li><a href="#test1"><b>INICIO</b></a></li>
-        <li><a href="Lecturas.html"><b>LECTURAS</b></a></li>
-        <li><a href="Multimedia.html"><b>MULTIMEDIA</b></a></li>
-        <li><a href="Lecturas.html"><b>ACTIVIDADES</b></a></li>
-        <li><a href="Lecturas.html"><b>AUTORES</b></a></li>
-      </ul>
-    </div>
-  </nav>
+<!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="Videos.html">Videos</a></li>
+    <li><a href="Audios.html">Audios</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+  </ul>
+
+		<nav>
+		    <div class="nav-wrapper">
+	    	  	<ul class="right hide-on-med-and-down">
+	        		<li><a href="Index.html">Inicio</a></li>
+	        		<li><a href="Lecturas.html">Lecturas</a></li>	        		
+	        	<!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="Multimedia.html" data-target="dropdown1">Multimedia<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="Actividades.html" data-target="dropdown1">Actividades<i class="material-icons right">arrow_drop_down</i></a></li>
+	        		<li><a href="Autores.html">Autores</a></li>
+	      		</ul>
+	    	</div>
+	  	</nav>
+	  	<ul class="sidenav" id="mobile-demo">
+    		<li><a href="Index.html">Inicio</a></li>
+   			<li><a href="Lecturas.html">Lecturas</a></li>
+    		<li><a href="Multimedia.html">Multimedia</a></li>
+    		<li><a href="Actividades.html">Actividades</a></li>
+    		<li><a href="Autores.html">Autores</a></li>
+  		</ul>
 
   <div class="row">  
 	
@@ -111,24 +128,6 @@
 		</div>
 	</div>
   
-<!--      <div class="section white">
-      <h3 style="font-family: Angsana New" class="header center"><b>OBJETIVO GENERAL</b></h3>
-        <div class="col s12 m8 offset-m2">
-                 <h5 class="center light">Aplicar las diferentes metodologías de diseño web</h5>            
-                  <br>             
-        </div>
-        <h3 style="font-family: Angsana New" class="header center"><b>OBJETIVOS ESPECÍFICOS</b></h3>
-        <div class="col s12 m8 offset-m2">
-                 <h5 class="center light">Diseñar mockup de la página web del tema seleccionado</h5>            
-                  <br>
-                  <h5 class="center light">Aprender el uso de las herramientas de diseño de mockups</h5>  
-                  <br>
-                  <h5 class="center light">Afianzar conocimientos y técnicas previas al desarrollo de la página web</h5>  
-          <br>
-     </div>
-       
-    </div> -->
-
     <div style="background-color: #808080" class="section">    
     <div  class="row center container">
       <h3 class="light header"><b>OBJETIVOS DEL CURSO</b></h3>
@@ -163,6 +162,9 @@
                 <div class="col l6 s14">
                     <p id="terminos">
                         Proyecto realizado por: <b>Jennifer Román Rogelis</b> y <b>Andres Medina Escobar</b> 
+                        <br><br>
+                        UNAD - Universidad Nacional Abierta y a Distancia
+						<br>Escuela de Ciencias Basicas, Tecnologia e Ingeniería (ECBTI)
                     </p>
                 </div>
                 <div class="col l4 offset-l2 s12" id="footerContac">
