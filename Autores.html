@@ -37,32 +37,28 @@
         </header>
        
 <!-- Dropdown Structure -->
-  <ul id="dropdown1" class="dropdown-content">
-    <li><a href="Videos.html">Videos</a></li>
-    <li><a href="Audios.html">Audios</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
+  <ul id='dropdown1' class="dropdown-content right">
+    <li><a id="colorAzulMenu" href="Videos.html">Videos</a></li>
+    <li><a id="colorAzulMenu" href="Audios.html">Audios</a></li>
+  </ul>
+
+  <ul id='dropdown2'  class="dropdown-content right" >
+    <li><a id="colorAzulMenu" href="Videos.html">uno</a></li>
+    <li><a id="colorAzulMenu" href="Audios.html">dos</a></li>
   </ul>
 
     <nav>
         <div class="nav-wrapper">
             <ul class="right hide-on-med-and-down">
               <li><a href="Index.html">Inicio</a></li>
-              <li><a href="Lecturas.html">Lecturas</a></li>             
+              <li><a href="Lecturas.html">Lecturas</a></li>                        
             <!-- Dropdown Trigger -->
-        <li><a class="dropdown-trigger" href="Multimedia.html" data-target="dropdown1">Multimedia<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-trigger" href="Actividades.html" data-target="dropdown1">Actividades<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a id='colorAzul' class='dropdown-button btn' href="#!" data-activates='dropdown1'>Multimedia<i class="material-icons right"></i></a></li>
+        <li><a id='colorAzul' class='dropdown-button btn' href="#!" data-activates='dropdown2'>Actividades<i class="material-icons right"></i></a></li>
               <li><a href="Autores.html">Autores</a></li>
             </ul>
         </div>
       </nav>
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="Index.html">Inicio</a></li>
-        <li><a href="Lecturas.html">Lecturas</a></li>
-        <li><a href="Multimedia.html">Multimedia</a></li>
-        <li><a href="Actividades.html">Actividades</a></li>
-        <li><a href="Autores.html">Autores</a></li>
-      </ul>
 
       <div class="row center container">
     <h3 id="items" class="light header">Autores</h3>
@@ -94,9 +90,21 @@
   </div>
 
        <footer style="background-color:black;" class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s14">
+            <div class="container">
+              <div class="row">
+                <div class="col l8 s12 center">
+                  <a class="btn-floating btn-large waves-effect waves-light facebook" href="https://www.facebook.com/UniversidadUNAD" target="_blank" style="background-color: #337AB7;"><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light instagram" href="https://www.instagram.com/universidadunad/" target="_blank" style="background-color: #EAA867;"><i class="fab fa-instagram"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light blue" href="https://twitter.com/UniversidadUNAD" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light red" href="https://www.youtube.com/user/universidadunad" target="_blank"><i class="fab fa-youtube"></i></a>
+                  <br><br>
+                  <a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=c2sb4fb67swyz6gpsbcyh5u8bmuzg4g2" border="0" title="contador de visitas" alt="contador de visitas"></a>
+                </div>
+                <div class="col l4 s12" style="width: 300px!important; height: 300px; overflow: auto;">
+                  <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                  
+                  <div class="col l6 s14">
                     <p id="terminos">
                         Proyecto realizado por: <b>Jennifer Román Rogelis</b> y <b>Andres Medina Escobar</b> 
                         <br><br>
@@ -104,18 +112,20 @@
             <br>Escuela de Ciencias Basicas, Tecnologia e Ingeniería (ECBTI)
                     </p>
                 </div>
+                <br>
                 <div class="col l4 offset-l2 s12" id="footerContac">
+                  <br>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15866.458147896696!2d-75.6033496!3d6.1823156500000005!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1540434146440" width="500" height="200" ></iframe>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="footer">
-            <div class="container">
-                <p id="terminos">©2018 Todos los derechos reservados.</p>
-            </div>
-        </div>        
+            <div class="footer">
+              <div class="container">
+                  <p id="terminos">©2018 Todos los derechos reservados.</p>
+              </div>
+          </div>        
             <br>
-    </footer>
+        </footer>
 
 
 </body>
