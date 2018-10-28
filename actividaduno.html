@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Sopa de letras</title>
+
+<link rel="stylesheet" type="text/css" href="css2/style2.css"  media="all">
+<link rel="stylesheet" href="css2/bootstrap.min.css" >
+<link rel="stylesheet" type="text/css" href="css2/jquery-ui.css">
+<link href="css2/jquery.tagit.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="Css/style.css" /> 
+
+<script type="text/javascript" src="css2/jquery.min.js"></script> 
+<script type="text/javascript" src="css2/wordfind.js"></script> 
+<script type="text/javascript" src="css2/wordfindgame.js"></script> 
+<script type="text/javascript" src="css2/bootstrap.min.js" ></script>
+<script type="text/javascript" src="css2/jquery-ui.min.js"  ></script>
+<script type="text/javascript" src="css2/tag-it.js"></script>
+
+
+</head>
+<body style="background-color:#B3B3B3B3">       
+
+   <header>
+<div id="index-banner"  height="30%">  
+            <img src="IMG/ECBTI-1.png" width="100%">
+            </div>
+        </header>
+
+    <style media="print">.ocultar {display:none;}.col-md-3 { width: 25%;float: left;}.col-md-9 {width: 75%;float: left;}
+    </style>
+
+<div class="container">    
+    <div class="row">
+        
+        <script type="text/javascript">
+            var mytag;
+            $(document).ready(function () {
+                mytag = $("#myTags").tagit({});
+				Crear();
+            });
+</script>
+<div class="row  ocultar text-center">
+    <br />
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 id="items" class="panel-heading" ><b>Sopa de Letras - Teoria General de Sistemas</b></h1> 
+        <h4>1.- Escribe las palabras, luego presiona el botón <strong>"Crear Juego"</strong></h4></div>
+    <div class="panel-body"><ul id="myTags">
+    <li>Totalidad</li>
+    <li>Entropia</li>
+    <li>Sinergia</li>
+    <li>Finalidad</li>
+    <li>Equifinalidad</li>
+    <li>Equipotencialidad</li>
+    <li>Retroalimentacion</li>
+    <li>Homeostasis</li>
+    <li>Morfogenesis</li>
+</ul></div>
+  </div>
+
+    </div>
+    
+
+ 
+<div class="row text-center">
+<div class="ocultar">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Header -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4331617637495482"
+     data-ad-slot="2764029251"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div>
+
+<div class="row">
+
+
+     <div class="panel panel-default">
+     <div class="panel-heading ocultar"><h4>2.- Crea la sopa e imprimela o simplemente resuelvela online</h4></div>
+    <div class="panel-body">
+    <div class="ocultar">
+    <button onclick="Crear();" class="btn btn-success btn-lg"> Crear Juego</button>
+    <button onclick="window.print();" class="btn btn-info btn-lg "> Imprimir</button>
+    <button id='solve' class="btn btn-danger btn-lg" >  Resolver</button>
+    <!-- <a href="#" class="btn btn-default btn-lg" > Descargar</a>-->
+        </div>
+        <div class="row">
+
+
+        <div class="col-md-3">
+                        <div id='Palabras'></div>
+
+        </div>
+                <div class="col-md-9">
+                        <div id='juego'></div>
+
+                </div>
+         </div>
+        
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+	
+</div>
+
+
+    
+    
+    
+    <script>
+    var words = [];
+	var gamePuzzle;
+	function Crear() {
+    
+	    datos = mytag[0].textContent.trim().split("×");
+        
+	    for (i = 0; i < (datos.length)-1; i++) {
+	       words.push(datos[i]);
+
+	    }
+	    $('#Juegos').show();
+	    gamePuzzle = wordfindgame.create(datos, '#juego', '#Palabras');
+	    var puzzle = wordfind.newPuzzle(datos, { height: 18, width: 18, fillBlanks: false });
+        wordfind.print(puzzle);   
+      }
+		$('#solve').click( function() {wordfindgame.solve(gamePuzzle, words);});
+    </script>
+    </div>
+
+    <footer style="background-color:black;" class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l8 s12 center">
+                        <a class="btn-floating btn-large waves-effect waves-light facebook" href="https://www.facebook.com/UniversidadUNAD" target="_blank" style="background-color: #337AB7;"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light instagram" href="https://www.instagram.com/universidadunad/" target="_blank" style="background-color: #EAA867;"><i class="fab fa-instagram"></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue" href="https://twitter.com/UniversidadUNAD" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light red" href="https://www.youtube.com/user/universidadunad" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <br><br>
+                        <a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=c2sb4fb67swyz6gpsbcyh5u8bmuzg4g2" border="0" title="contador de visitas" alt="contador de visitas"></a>
+                    </div>
+                    <div class="col l4 s12" style="width: 300px!important; height: 300px; overflow: auto;">
+                        <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    
+                    <div class="col l6 s14">
+                    <p id="terminos">
+                        Proyecto realizado por: <b>Jennifer Román Rogelis</b> y <b>Andres Medina Escobar</b> 
+                        <br><br>
+                        UNAD - Universidad Nacional Abierta y a Distancia
+                        <br>Escuela de Ciencias Basicas, Tecnologia e Ingeniería (ECBTI)
+                    </p>
+                </div>
+                <br>
+                <div class="col l4 offset-l2 s12" id="footerContac">
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15866.458147896696!2d-75.6033496!3d6.1823156500000005!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1540434146440" width="500" height="200" ></iframe>
+                </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <p id="terminos">©2018 Todos los derechos reservados.</p>
+                </div>
+            </div>        
+            <br>
+        </footer>
+        
+</body>
+</html>
